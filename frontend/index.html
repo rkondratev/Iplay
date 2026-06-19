@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Видео-плеер Ifbest</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Plyr CSS -->
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.8.4/plyr.css" />
+    <!-- Ваши стили -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container-fluid">
+                <div class="row align-items-center">
+                    <ul class="top-menu top-menu-left d-flex align-items-center list-unstyled mb-0" id="logo_header">
+                        <li class="me-2">
+                            <a href="javascript:void(0)" class="btn-open-mobile-nav">
+                                <i class="icon-menu"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://ifbest.org">
+                                <img src="https://ifbest.org/uploads/logo/logo_69a55b208369d1.png" 
+                                     alt="logo" class="logo" style="z-index:9999999999;margin-top:-2px;" 
+                                     width="100px" height="auto">
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="top-menu top-menu-right d-flex align-items-center list-unstyled mb-0 ms-auto me-2" id="reg_header">
+                        <li class="top-li-auth me-3">
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#modal-login">Вход</a>
+                            <span class="mx-1">/</span>
+                            <a href="https://ifbest.org/register">Регистрация</a>
+                        </li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                                Русский <span class="icon-arrow-down"></span>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="https://ifbest.org/en/">English</a></li>
+                                <li><a class="dropdown-item active" href="https://ifbest.org/">Русский</a></li>
+                                <li><a class="dropdown-item" href="https://ifbest.org/be/">Беларускі</a></li>
+                                <li><a class="dropdown-item" href="https://ifbest.org/fr/">Français</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="video_line">
+            <div class="player-card">
+                <div class="video-wrapper">
+                    
+                    <video id="player" playsinline></video>
+                </div>
+            </div>
+        </div>
+    </main>
+<footer class="footer">
+    <div class="container">
+        <div class="footer-bottom-left">
+            <p>Copyright 2026 IfBest - All Rights Reserved.</p>
+        </div>
+
+        <nav class="nav-footer" aria-label="Нижнее меню">
+            <a href="https://ifbest.org/support">Поддержка</a>
+            <a href="https://ifbest.org/terms-conditions">Пользовательское соглашение</a>
+            <a href="https://ifbest.org/politika-konfidentsialnosti">Политика конфиденциальности</a>
+            <a href="https://ifbest.org/stat-avtorom">Как опубликовать статью?</a>
+            <a href="https://ifbest.org/cookie">Политика Cookie</a>
+            <a href="https://ifbest.org/zagruzit-video">Загрузить видео</a>
+            <a href="https://ifbest.org/usloviya-monetizatsii">Монетизация</a>
+            <a href="https://ifbest.org/favorites">Избранное</a>
+            <a href="https://ifbest.org/rules">Правила</a>
+            <a href="https://ifbest.org/reklamodatelyam">Рекламодателям</a>
+            <a href="https://ifbest.org/games">Игры</a>
+            <a href="https://ifbest.org/spisok-stran-v-kotorikh-rabotaet-monetizatsiya">Список стран монетизации</a>
+            <a href="https://ifbest.org/biblioteka-audio">Библиотека аудио</a>
+            <a href="https://ifbest.org/o-verifikatsii-kanalov">О верификации каналов</a>
+            <a href="https://ifbest.org/partnyori">Партнёры</a>
+        </nav>
+    </div>
+</footer>
+    <!-- Скрипты -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+    <script src="https://cdn.plyr.io/3.8.4/plyr.js"></script>
+    <script src="./scripts/setting_video.js"></script>
+</body>
+</html>
