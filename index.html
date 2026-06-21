@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IfBest Player</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>IfBest Video Player</h1>
+
+    <div class="video-list">
+        <button>Видео 1</button>
+        <button>Видео 2</button>
+        <button>Видео 3</button>
+    </div>
+
+    <div class="player">
+
+        <video controls>
+            <source src="video.mp4" type="video/mp4">
+        </video>
+
+        <div class="custom-controls">
+
+            <button>▶ Play</button>
+
+            <div class="progress-container">
+                <div class="progress"></div>
+            </div>
+
+            <span>00:00 / 10:30</span>
+
+            <select>
+                <option>Auto</option>
+                <option>360p</option>
+                <option>720p</option>
+                <option>1080p</option>
+            </select>
+
+            <select>
+                <option>0.5x</option>
+                <option>0.75x</option>
+                <option selected>1x</option>
+                <option>1.25x</option>
+                <option>1.5x</option>
+                <option>2x</option>
+            </select>
+
+            <button>⛶</button>
+
+        </div>
+
+    </div>
+
+    <div class="views">
+        Просмотров: <span>152</span>
+    </div>
+
+</div>
+
+</body>
+</html>

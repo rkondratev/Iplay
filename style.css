@@ -1,0 +1,103 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#111827;
+    color:white;
+    font-family:Arial, sans-serif;
+    padding:40px;
+}
+
+.container{
+    max-width:1000px;
+    margin:auto;
+}
+
+h1{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.video-list{
+    display:flex;
+    gap:10px;
+    margin-bottom:20px;
+}
+
+.video-list button{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:10px 20px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.video-list button:hover{
+    background:#1d4ed8;
+}
+
+.player{
+    background:#1f2937;
+    border-radius:15px;
+    overflow:hidden;
+}
+
+video{
+    width:100%;
+    aspect-ratio:16/9;
+    display:block;
+    background:black;
+}
+
+.custom-controls{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    padding:15px;
+    flex-wrap:wrap;
+}
+
+.custom-controls button{
+    background:#374151;
+    color:white;
+    border:none;
+    padding:10px 15px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.custom-controls select{
+    background:#374151;
+    color:white;
+    border:none;
+    padding:10px;
+    border-radius:8px;
+}
+
+.progress-container{
+    flex:1;
+    height:8px;
+    background:#4b5563;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+.progress{
+    width:35%;
+    height:100%;
+    background:#3b82f6;
+}
+
+.views{
+    margin-top:20px;
+    font-size:22px;
+    font-weight:bold;
+}
+
+.views span{
+    color:#60a5fa;
+}
